@@ -1,0 +1,160 @@
+@import '@/styles/_const';
+
+.profile-block {
+  max-width: 600px;
+  position: relative;
+  min-height: 100%;
+  width: 100vw;
+  margin-bottom: 128px;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+  -ms-overflow-style: none;
+
+  overflow: -moz-scrollbars-none;
+
+  &-header {
+    position: absolute;
+    height: 176px;
+    width: 100%;
+    background-color: $gray_color;
+  }
+
+  &-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  &-line {
+    align-items: center;
+    margin-top: 124px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 61px;
+    margin-right: 61px;
+    &-solo {
+      align-self: center;
+    }
+  }
+  &-edit {
+    &-block {
+      margin-top: 40px;
+      margin-left: 62px;
+      margin-right: 62px;
+    }
+    &-buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &-avatar {
+    border-radius: 50%;
+    width: 104px;
+    object-fit: cover;
+    height: 104px;
+  }
+  &-name {
+    color: $violet_color;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 4px;
+  }
+  &-record {
+    margin-top: 4px;
+    color: $violet_color;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 4px;
+    margin-bottom: 24px;
+    &_label {
+      background-color: $siren_color;
+      border-radius: 16px;
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      color: $black_color;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &-history {
+    margin-left: 32px;
+    margin-right: 32px;
+    &_label {
+      margin-top: 0px;
+      color: $violet_color;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.profile {
+  &-dropdown {
+    &-status {
+      position: relative;
+      &-content {
+        display: none;
+        box-sizing: border-box;
+        padding: 8px;
+        flex-flow: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+        position: absolute;
+        background-color: $bg_color;
+        width: 112px;
+        height: 112px;
+        border-radius: 8px;
+        left: 3px;
+        top: 12px;
+        box-shadow: 0px 10px 30px rgba(33, 33, 33, 0.1);
+        &:hover {
+          display: block;
+        }
+      }
+      &:hover .profile-dropdown-status-content {
+        display: flex;
+      }
+    }
+    &-setting {
+      position: relative;
+      &-content {
+        display: none;
+        top: 35px;
+        right: 0px;
+        position: absolute;
+        background-color: $bg_color;
+        border-radius: 8px;
+        box-shadow: 0px 10px 30px rgba(33, 33, 33, 0.1);
+        &:hover {
+          display: block;
+        }
+      }
+      &-button {
+        height: 56px;
+        padding-left: 16px;
+        width: 208px;
+        border-radius: 8px;
+        border-color: transparent;
+        color: $black_color;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+      }
+      &:hover .profile-dropdown-setting-content {
+        display: block;
+      }
+    }
+  }
+}

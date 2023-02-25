@@ -1,0 +1,16 @@
+@import-normalize;
+
+@import '@/static/fonts/Golos-Text_Medium';
+@import './const';
+
+html {
+  font-family: 'GolosTextWebMedium';
+  background-color: $bg_color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+}

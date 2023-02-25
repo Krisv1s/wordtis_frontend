@@ -1,0 +1,79 @@
+@import '@/styles/_const';
+
+.leaderboard-string {
+  margin-top: 8px;
+  width: 100%;
+  background-color: $siren_color;
+  height: 78px;
+  border-radius: 24px;
+  padding-left: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &-isUser {
+    border: 1px solid #6f2dbd;
+    border-radius: 24px;
+  }
+  &-place {
+    background-color: $violet_color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $bg_color;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 24px;
+    &-solo {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+    }
+    &-yellow {
+      background-color: $yellow_color;
+    }
+    &-blue {
+      background-color: $blue_color;
+    }
+    &-yellowPink {
+      background-color: $yellow-pink_color;
+    }
+  }
+  &-user {
+    display: flex;
+    align-items: center;
+    &-avatar {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 16px;
+    }
+    &-textBlock {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      &-login {
+        color: $violet_color;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        margin: 0;
+      }
+      &-score {
+        margin: 8px 0 0 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $black_color;
+      }
+    }
+  }
+  &-status {
+  }
+}

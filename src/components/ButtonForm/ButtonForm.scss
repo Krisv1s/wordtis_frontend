@@ -1,0 +1,21 @@
+@import '@/styles/_const';
+
+.button-form {
+  margin-top: 8px;
+  width: 100%;
+  color: $bg_color;
+  height: 63px;
+  background: $violet_color;
+  border-radius: 8px;
+  border-style: hidden;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+  &-profile {
+    width: 48%;
+  }
+  &:disabled {
+    cursor: progress;
+  }
+}

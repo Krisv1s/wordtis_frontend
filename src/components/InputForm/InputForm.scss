@@ -1,0 +1,68 @@
+@import '@/styles/_const';
+
+.input-form-block {
+  width: 100%;
+  margin-bottom: 31px;
+  position: relative;
+  &_content {
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-right: 24px;
+    background: $siren_color;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: transparent;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    height: 64px;
+    width: 100%;
+
+    font-style: normal;
+    color: $black_color;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    caret-color: $violet_color;
+    &:focus {
+      + .label {
+        font-weight: 600;
+        bottom: 70%;
+        left: 93%;
+      }
+    }
+
+    &:not(:placeholder-shown) + .label {
+      font-weight: 600;
+      bottom: 70%;
+      left: 93%;
+    }
+
+    &::placeholder {
+      opacity: 0;
+    }
+    &:focus {
+      outline: none !important;
+      border-color: $violet_color;
+    }
+  }
+  .label {
+    position: absolute;
+    transition: 0.2s bottom, 0.2s font-weight, 0.2s left;
+    bottom: 0;
+    margin-bottom: 23px;
+    margin-left: calc(-100% + 24px);
+    color: $violet_color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    left: 100%;
+    cursor: text;
+  }
+  img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}

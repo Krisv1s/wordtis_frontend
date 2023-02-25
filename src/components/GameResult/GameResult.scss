@@ -1,0 +1,40 @@
+@import '@/styles/_const';
+
+.game_result-block {
+  height: 80px;
+  background-color: $siren_color;
+  border-radius: 24px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  &-icon {
+    margin-top: 19px;
+    margin-left: 20px;
+    margin-bottom: 19px;
+    margin-right: 37px;
+    width: 57px;
+  }
+  &-time {
+    margin-top: 12px;
+    color: $black_color;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 0px;
+  }
+  &-label {
+    margin-top: 8px;
+    color: $black_color;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 10px;
+    margin-bottom: 0px;
+  }
+  &-score {
+    color: $violet_color;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 2px;
+  }
+}
